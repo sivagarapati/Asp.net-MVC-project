@@ -1,0 +1,10 @@
+H:\SMS_FINAL\SMSApp.Entities\bin\Debug\SMSApp.Entities.dll
+H:\SMS_FINAL\SMSApp.Entities\bin\Debug\SMSApp.Entities.pdb
+H:\SMS_FINAL\SMSApp.Entities\obj\Debug\SMSApp.Entities.dll
+H:\SMS_FINAL\SMSApp.Entities\obj\Debug\SMSApp.Entities.pdb
+H:\SMS_FINAL\SMSApp.Entities\obj\Debug\SMSApp.Entities.csprojResolveAssemblyReference.cache
+C:\Users\siva\Desktop\SMS_FINAL_full\SMS_FINAL\SMSApp.Entities\bin\Debug\SMSApp.Entities.dll
+C:\Users\siva\Desktop\SMS_FINAL_full\SMS_FINAL\SMSApp.Entities\bin\Debug\SMSApp.Entities.pdb
+C:\Users\siva\Desktop\SMS_FINAL_full\SMS_FINAL\SMSApp.Entities\obj\Debug\SMSApp.Entities.csprojResolveAssemblyReference.cache
+C:\Users\siva\Desktop\SMS_FINAL_full\SMS_FINAL\SMSApp.Entities\obj\Debug\SMSApp.Entities.dll
+C:\Users\siva\Desktop\SMS_FINAL_full\SMS_FINAL\SMSApp.Entities\obj\Debug\SMSApp.Entities.pdb
