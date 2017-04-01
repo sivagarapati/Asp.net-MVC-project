@@ -1,0 +1,156 @@
+@model SMSApp.Entities.ContactUs
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta charset="utf-8">
+    <title>Education Management System</title>
+    <link rel="stylesheet" href="~/styles/style.css" type="text/css">
+    <link href="~/styles/bootstrap.css" rel="stylesheet">
+    <link href="~/styles/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/styles/css.css">
+    <link rel="stylesheet" href="~/styles/ace.css">
+    <script src="~/Scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            if ($("#hdnerrorMessege").val() != '') {
+                alert($("#hdnerrorMessege").val());
+            }
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div class="home">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <h1>Central High School</h1>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="ultopnav">
+                <li class="litopnav"><a href="~/Home/Home">Home</a></li>
+                <li class="litopnav"><a href="~/Home/academic">Academics</a></li>
+                <li class="litopnav"><a href="~/Home/sports">Sports</a></li>
+                <li class="litopnav"><a href="~/Home/aboutus">About Us</a></li>
+                <li class="litopnav"><a class="active" href="~/Home/contactus">Contact Us</a></li>
+                <li class="litopnav login"><a href="/Account/Login">LOGIN</a></li>
+            </ul>
+            <div class="page-content">
+                @{Html.BeginForm("ContactUs", "Home", FormMethod.Post, new { id = "frm_ContactUs", dialog = "false", enctype = "multipart/form-data" });}
+
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+                <fieldset>
+                    <legend style="color:red;text-align:center;font-size:30px;">ContactUs</legend>
+                    <table align="center">
+                        <tr>
+                            <td colspan="2">&nbsp;</td>
+                            <td colspan="3" align="right">
+                                <div class="editor-label">
+                                    @Html.LabelFor(model => model.FirstName)
+                                </div>
+                            </td>
+                            <td colspan="1">&nbsp;</td>
+                            <td colspan="4" align="left">
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.FirstName)
+                                    @Html.ValidationMessageFor(model => model.FirstName)
+                                </div>
+                            </td>
+                            <td colspan="2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">&nbsp;</td>
+                            <td colspan="3" align="right">
+                                <div class="editor-label">
+                                    @Html.LabelFor(model => model.LastName)
+                                </div>
+                            </td>
+                            <td colspan="1">&nbsp;</td>
+                            <td colspan="4" align="left">
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.LastName)
+                                    @Html.ValidationMessageFor(model => model.LastName)
+                                </div>
+                            </td>
+                            <td colspan="2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">&nbsp;</td>
+                            <td colspan="3" align="right">
+                                <div class="editor-label">
+                                    @Html.LabelFor(model => model.Email)
+                                </div>
+                            </td>
+                            <td colspan="1">&nbsp;</td>
+                            <td colspan="4" align="left">
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.Email)
+                                    @Html.ValidationMessageFor(model => model.Email)
+                                </div>
+                            </td>
+                            <td colspan="2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">&nbsp;</td>
+                            <td colspan="3" align="right">
+                                <div class="editor-label">
+                                    @Html.LabelFor(model => model.PhoneNumber)
+                                </div>
+                            </td>
+                            <td colspan="1">&nbsp;</td>
+                            <td colspan="4" align="left">
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.PhoneNumber)
+                                    @Html.ValidationMessageFor(model => model.PhoneNumber)
+                                </div>
+                            </td>
+                            <td colspan="2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">&nbsp;</td>
+                            <td colspan="3" align="right">
+                                <div class="editor-label">
+                                    @Html.LabelFor(model => model.Information)
+                                </div>
+                            </td>
+                            <td colspan="1">&nbsp;</td>
+                            <td colspan="4" align="left">
+                                <div class="editor-field">
+                                    @Html.EditorFor(model => model.Information)
+                                    @Html.ValidationMessageFor(model => model.Information)
+                                </div>
+                            </td>
+                            <td colspan="2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">&nbsp;</td>
+                            <td colspan="4">&nbsp;</td>
+                            <td colspan="4" align="center">
+                                <div class="editor-field">
+                                    <p>
+                                        <input style="vertical-align:central" type="submit" value="Contact Us" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td colspan="2">&nbsp;</td>
+                        </tr>
+                    </table>
+                </fieldset>
+                @{
+                }
+                <input type="hidden" name="hdnerrorMessege" id="hdnerrorMessege" value="@TempData["errorMessege"]" />
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Copyrights &copy 2016 <a href="~/Home/Home">"Central High School"</a>
+    </div>
+
+</body>
+</html>

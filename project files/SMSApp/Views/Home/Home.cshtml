@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta charset="utf-8">
+    <title>Central High School</title>
+    <link rel="stylesheet" href="~/Styles/style.css" type="text/css">
+    <link href="~/Styles/bootstrap.css" rel="stylesheet">
+    <link href="~/Styles/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Styles/css.css">
+    <link rel="stylesheet" href="~/Styles/ace.css">
+
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            border-radius: 5px;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+
+        img
+        {
+            width: 100%;
+            height: 300px;
+        }
+        p
+        {
+          text-indent:50px;
+        }
+
+    </style>
+
+    </head>
+
+<body>
+    <div class="home">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container-fluid" >
+                      <h1>Central High School</h1>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="ultopnav">
+                <li class="litopnav"><a class="active" href="~/Home/Home">Home</a></li>
+                <li class="litopnav"><a href="~/Home/academic">Academics</a></li>
+                <li class="litopnav"><a href="~/Home/sports">Sports</a></li>
+                <li class="litopnav" ><a href="~/Home/aboutus">About Us</a></li>
+                <li class="litopnav" ><a href="~/Home/contactus">Contact Us</a></li>
+                <li class="litopnav login"><a href="~/Account/Login">LOGIN</a></li>
+            </ul>
+            <div class="page-content">
+                <h1 style="color:red;text-align:center;font-size:30px;"> Welcome to Central High School Home</h1>
+                <p><b>Our Mission</b> CHS is a personalized learning community that respects individuality, encourages 
+                    independent thinking, and values creativity in all disciplines.
+                    </p>
+                <p><b>CHS</b> goes beyond traditional school and creates a supportive and nurturing community. 
+                    Students are encouraged to participate, problem solve, think creatively, try new things, and incorporate
+                     things like individual self expression into their curriculum and daily lives. 
+                    Teenagers become aware of the world that stretches far beyond their classroom and where they live.</p>
+                <p>The opportunity offered to high school students at CHS is unlike anything offered in the Kansas City area. 
+                    Explore the Core Curriculum and Electives listed below to learn more about the unique education experience at CHS.</p>
+                <div class="container">  
+                     <img src="~/images/home-1.jpg" id="myImg" />
+                </div>
+                             
+
+                                <script>
+			(function(){
+			  
+			        var counter = 0;
+			            setInterval(function(){
+			                document.getElementById("myImg").src = "../images/home-" + parseInt(parseInt(counter) +1) +".jpg";			                
+			                counter++;
+			                if(counter === 6){
+			                    counter = 0;
+			                }
+			            },4000);			       
+			})();
+                                </script>
+                      
+    
+
+
+
+            </div>
+        </div>
+    </div>
+<div id="footer">
+                    Copyrights &copy 2016  <a href="~/Home/Home">"Central High School"</a>                
+</div>
+</body>
+</html>
